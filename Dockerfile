@@ -36,6 +36,6 @@ CMD ss-server -s "$SERVER_ADDR" \
               -k "$PASSWORD"    \
               -t "$TIMEOUT"     \
               -d "$DNS_ADDR"    \
-              -u "myid"         \
+              -u                \
               -A                \
               --fast-open
