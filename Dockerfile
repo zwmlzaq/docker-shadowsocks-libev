@@ -24,7 +24,7 @@ ENV SERVER_ADDR 0.0.0.0
 ENV SERVER_PORT 8388
 ENV METHOD      aes-256-cfb
 ENV PASSWORD    jD78_$Bqe4
-ENV TIMEOUT     60
+ENV TIMEOUT     600
 ENV DNS_ADDR    8.8.8.8
 
 EXPOSE $SERVER_PORT/tcp
@@ -35,7 +35,6 @@ CMD ss-server -s "$SERVER_ADDR" \
               -m "$METHOD"      \
               -k "$PASSWORD"    \
               -t "$TIMEOUT"     \
-              -d "$DNS_ADDR"    \
               -u                \
               -A                \
               --fast-open
