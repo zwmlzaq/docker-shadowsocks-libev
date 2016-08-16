@@ -5,7 +5,7 @@ server:
     - "8388:8388/udp"
   environment:
     - METHOD=aes-256-cfb
-    - PASSWORD=5ouMnqPyzseL
+    - PASSWORD=jD78_$Bqe4
   restart: always
 
 client:
@@ -29,7 +29,7 @@ client-arm:
   ports:
     - "1080:1080"
   environment:
-    - SERVER_ADDR=0.0.0.0
+    - SERVER_ADDR=1.2.3.4
     - METHOD=aes-256-cfb
     - PASSWORD=jD78_$Bqe4
   restart: always
